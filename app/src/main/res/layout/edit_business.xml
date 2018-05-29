@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_below="@+id/VenStalList"
+    android:background="@drawable/shape"
+    android:padding="10dp"
+    tools:context="com.example.omarla.food2u_repo.AddBusinessFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your business name was"
+                android:textColor="@color/colorPink"
+                android:textSize="25dp"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/business_name_fixed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="fuckk you bitch"
+                android:textColor="@color/colorDarkBlue"
+                android:gravity="center"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@color/colorBlack"
+                android:text="Location"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/location_here"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/colorDarkBlue"
+                android:text="Location is here"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit your Business details here"
+                android:gravity="center"
+                android:textColor="@color/colorBrown"
+                android:textSize="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@color/coloroyellow"
+                android:text="     -------------------------------------------"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:text="*Click on the image to edit new image"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fraglin1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <ImageView
+            android:id="@+id/edited_image"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/snacks" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/edt_bus_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="New Business name"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/edt_spin_loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinnerLocation2"
+                android:prompt="@array/spinnerLocation2"></Spinner>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/edt_save_business"
+        android:layout_width="60dp"
+        android:layout_below="@id/fraglin1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/orangestyle"
+
+        android:text="Save"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

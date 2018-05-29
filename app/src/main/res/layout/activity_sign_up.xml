@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/off_white"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="25dp"
+    tools:context="com.example.omarla.food2u_repo.SignUp">
+
+    <TextView
+        android:id="@+id/lpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zykee"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lpu"
+        android:background="@drawable/card_color"
+        android:padding="20dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scroll"
+            android:fillViewport="true"
+            android:layout_below="@id/sign_up"
+            android:layout_marginTop="15dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="2">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorBlack"
+                    android:layout_below="@+id/or"
+                    android:layout_marginTop="13dp">
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:hint="Name"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorBlack"
+                    android:layout_below="@+id/layout"
+                    android:layout_marginTop="13dp">
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:inputType="textWebEmailAddress"
+                        android:hint="Email ID"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorBlack"
+                    android:layout_below="@+id/layout1"
+                    android:layout_marginTop="13dp"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colororange">
+                    <EditText
+                        android:id="@+id/password"
+                        android:inputType="textWebPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:hint="Password"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorBlack"
+                    android:layout_below="@+id/layout2"
+                    android:layout_marginTop="13dp"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colororange">
+                    <EditText
+                        android:id="@+id/conf_password"
+                        android:inputType="textWebPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:hint="Confirm password"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
+                </android.support.design.widget.TextInputLayout>
+                <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:id="@+id/layout5"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColorHint="@color/colorBlack"-->
+                <!--android:background="@color/cardview_shadow_start_color"-->
+                <!--android:layout_below="@+id/layout2"-->
+                <!--android:layout_marginTop="13dp">-->
+                <!--<EditText-->
+                <!--android:id="@+id/conf_password"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/username"-->
+                <!--android:inputType="textWebEmailAddress"-->
+                <!--android:hint="Confirm Password"-->
+                <!--android:textColor="@color/colorBlack"-->
+                <!--android:textSize="13sp" />-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/mob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorBlack"
+                    android:layout_below="@+id/layout5"
+                    android:layout_marginTop="13dp">
+
+                    <EditText
+                        android:id="@+id/ed_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/textView3"
+                        android:layout_below="@+id/layout3"
+                        android:ems="10"
+                        android:textColor="@color/colorBlack"
+                        android:hint="Mobile No.(for order Updates)"
+                        android:textSize="13sp"
+                        android:inputType="phone"
+                        android:digits="0123456789"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+                <Button
+                    android:id="@+id/btn_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/scroll"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/primary"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="SIGNUP"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/button"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/button"
+                        android:text="ALREADY HAVE AN ACCOUNT?"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/Log_in"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Log In"
+                        android:textColor="@color/colororange"
+                        android:clickable="true"
+                        android:contextClickable="true"
+                        android:onClick="Perfor_Action"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </TableLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

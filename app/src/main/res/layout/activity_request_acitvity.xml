@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:gravity="center"
+    tools:context="com.example.omarla.food2u_repo.RequestAcitvity">
+
+    <Button
+        android:id="@+id/rqst_btn"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bluestyle"
+        android:text="Request to Become Vendor"
+        android:textColor="@color/colorWhite"
+        />
+<TextView
+    android:layout_below="@+id/rqst_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Send a Request to the Admin to become vendor"/>
+</RelativeLayout>

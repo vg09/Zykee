@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="10dp"
+    tools:context="com.example.omarla.food2u_repo.VendorDashboard">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/off_white">
+
+
+        <ScrollView
+            android:id="@+id/vrel"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+
+            android:background="@drawable/off_white">
+
+
+            <RelativeLayout
+                android:id="@+id/v_rel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image123"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/img"
+                    app:civ_border_color="#111112"
+                    app:civ_border_width="2dp" />
+
+
+                <TextView
+                    android:id="@+id/user_ven_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_image123"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:text="Vendor Name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/email_ven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_ven_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:text="Vendor Email address"
+                    android:textColor="#515151"
+                    android:textSize="12dp" />
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/vreli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vrel"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="15dp"
+                android:textColor="@color/colorPink"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vreli"
+            android:background="@color/colorBrown">
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+
+            android:id="@+id/btlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_container"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/addBbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/bluestyle"
+                android:padding="10dp"
+                android:text="+Add New Business"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/goTransact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/addBbtn"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/orangestyle"
+                android:padding="10dp"
+                android:text="Go to transactions page ->"
+                android:textColor="@color/colorWhite"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+
+
+        <ListView
+
+            android:id="@+id/VenStalList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btlay"
+            android:background="@color/colorWhite" />
+
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+

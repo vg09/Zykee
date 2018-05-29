@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.omarla.food2u_repo">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/zykee3"
+        android:label="Zykee"
+
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/zykee3"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBnMgwzvC5wZ0VK919Qdgy3yAFp5RxhhTM" />
+
+        <activity android:name=".googlelogin"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".LogIn"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".ForgetPassword"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".EditProfile"
+            android:label="Profile"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SignUp"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AddItem"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait"/>
+
+        <receiver android:name=".ActionReceiver"
+            />
+
+        <activity
+            android:name=".VendorDashboard"
+            android:label="HELLO VENDOR"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait"/>
+
+        <activity
+        android:name=".Rating_of_stall"
+        android:label="Ratings"
+        android:screenOrientation="portrait"
+       />
+        <activity
+            android:name=".CustomerDashboard"
+            android:label="Dashboard"
+
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".EditBusiness"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait"
+    />
+        <activity
+            android:name=".Description"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Splashscreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".Stalls_common"
+            android:theme="@style/AppTheme"
+
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Edit_item"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Cart"
+            android:label="Your Cart"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity
+            android:name=".HistoryActivity"
+            android:label="History"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RequestAcitvity"
+            android:label="Stall Requests"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Vendor_Transaction"
+            android:label="@string/title_activity_vendor__transaction"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Paytm_main"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin_payments"
+            android:label="Payments"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AdminDashboard"
+            android:label="Admin"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RequestedVendor"
+            android:label="Requests"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ConfirmStallsInfo"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin_Confirmed_payments"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Change_Password"
+            android:screenOrientation="portrait"/>
+     <activity android:name=".SearchActivity"
+         android:label="Search"
+         android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+         android:screenOrientation="portrait"></activity>
+        <activity android:name=".Feedback"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

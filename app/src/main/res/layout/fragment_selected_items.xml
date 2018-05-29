@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.omarla.food2u_repo.Cart">
+
+
+
+    <ListView
+        android:id="@+id/my_order_list1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/proceed">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/proceed"
+        android:layout_above="@+id/go"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Total amount on cart : Rs. "
+            android:textColor="@color/colorBlack"
+            android:gravity="center_vertical"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/sumOfItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:text="45454"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/go"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/go_for_shop1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bluestyle"
+            android:textColor="@color/colorWhite"
+            android:text="GO SHOPPING AGAIN "/>
+
+        <Button
+            android:id="@+id/confirmation"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/greenstyle"
+            android:layout_gravity="center"
+            android:text="proceed to payment"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/VenStalList"
+    android:padding="10dp"
+
+    tools:context="com.example.omarla.food2u_repo.AddBusinessFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/fraglin1"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/addBusImage"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/user_img"
+            />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/bus_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Business Name"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spin_loc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinnerLocation2"
+                android:prompt="@array/spinnerLocation2"></Spinner>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@id/fraglin1"
+    android:layout_marginTop="10dp"
+    >
+    <Button
+            android:id="@+id/next"
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/greenstyle"
+android:layout_weight="1"
+            android:text="Send Request"
+            android:textColor="@color/colorWhite"
+            />
+    <Button
+        android:id="@+id/close"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/fraglin1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redstyle"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:text="Close"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>
+
+
+</RelativeLayout>

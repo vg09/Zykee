@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:background="@drawable/mbgradient"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.omarla.food2u_repo.Description"
+    tools:showIn="@layout/description">
+
+
+    <LinearLayout
+        android:id="@+id/lineardisc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/primary"
+            >
+            <ImageView
+                android:id="@+id/descrption_item"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/southindian" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="010dp">
+
+            <TextView
+                android:id="@+id/itemName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Item Name Here"
+                android:textSize="20dp"
+                android:textColor="@color/colorBrown"
+                android:textStyle="italic" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/itemCost1"
+                android:text="Price: Rs."
+                android:textColor="@color/colorBlack"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/itemCost1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:text="30    "
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+<LinearLayout
+    android:id="@+id/lineardisc2"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/shape"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_below="@id/lineardisc1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorDarkBlue"
+        />
+
+    <TextView
+        android:id="@+id/description1"
+
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorPink"
+        android:layout_height="50dp"
+        android:text="bla bla bla bla"/>
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/lineardisc2"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp">
+        <TextView
+            android:id="@+id/quan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qunatity:   "
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/removesome"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:src="@drawable/ic_remove_circle_outline_black_24dp"/>
+        <TextView
+            android:id="@+id/textNumberhere"
+            android:layout_width="30dp"
+            android:gravity="center"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+            android:textColor="@color/colorBlack"
+            android:text="1"/>
+
+        <ImageView
+            android:id="@+id/addsome"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:src="@drawable/ic_add_circle_outline_black_24dp"/>
+
+    <Button
+        android:id="@+id/add2cart_btn"
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/colorWhite"
+        android:text="ADD TO CART"
+        android:background="@drawable/orangestyle"/>
+
+
+    </LinearLayout>
+
+
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/fltcart"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:src="@drawable/cart_symbol"/>
+</RelativeLayout>

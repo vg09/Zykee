@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.omarla.food2u_repo.AdminDashboard">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:id="@+id/rel1"
+        android:background="@drawable/off_white">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/admin_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+android:src="@drawable/adminpic"
+            android:visibility="visible"
+            app:civ_border_width="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            app:civ_border_color="@color/colorWhite"/>
+
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/a_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Name"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/admin_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/a_mail"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a_name"
+            android:text="admin_account@gmail.com"
+            android:textSize="15dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true" />
+
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel1"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/upr"
+            android:gravity="center"
+            android:background="@color/colorWhite">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:onClick="show"
+                android:orientation="vertical"
+                android:background="@drawable/primary"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/request_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="345"
+                    android:textAlignment="center"
+                    android:background="@color/coloroyellow"
+                    android:layout_gravity="right"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"/>
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:id="@+id/p_img"
+                    android:tint="@color/coloroyellow"
+android:src="@drawable/restaurant"
+                    android:layout_height="50dp"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/p_img"
+                    android:text="Pending Requests"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:onClick="confirmstall_show"
+                android:background="@drawable/primary"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:id="@+id/c_img"
+                    android:layout_height="50dp"
+                    android:tint="@color/coloroyellow"
+                    android:src="@drawable/doneall"
+                  />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/c_img"
+                    android:text="Confirmed Requests"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp"/>
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/upr"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite">
+
+            <LinearLayout
+                android:clickable="true"
+                android:onClick="peding_pay_method"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:background="@drawable/primary"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/payment_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="345"
+                    android:textAlignment="center"
+                    android:background="@color/coloroyellow"
+                    android:layout_gravity="right"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+android:src="@drawable/attach_money"
+                    android:tint="@color/coloroyellow"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pending Payment"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:background="@drawable/primary"
+                android:layout_marginLeft="20dp"
+                android:onClick="show_paid"
+                android:clickable="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:src="@drawable/done_payment"
+                    android:tint="@color/coloroyellow"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paid"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
